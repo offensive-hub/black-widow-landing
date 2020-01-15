@@ -71,7 +71,15 @@ function modules() {
     .pipe(gulp.dest('./assets/vendor/simple-line-icons/fonts'));
   var simpleLineIconsCSS = gulp.src('./node_modules/simple-line-icons/css/**')
     .pipe(gulp.dest('./assets/vendor/simple-line-icons/css'));
-  return merge(bootstrap, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing, simpleLineIconsFonts, simpleLineIconsCSS);
+  return merge(
+      bootstrap,
+      fontAwesomeCSS,
+      fontAwesomeWebfonts,
+      jquery,
+      jqueryEasing,
+      simpleLineIconsFonts,
+      simpleLineIconsCSS
+  );
 }
 
 // CSS task
