@@ -1,10 +1,10 @@
 header.masthead {
   position: relative;
-  background-color: $gray-800;
-  background: url('../img/bg-masthead.jpg') no-repeat center center;
+  background: $gray-800 url('/assets/img/cover.jpg') no-repeat center center;
   @include background-cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
+  display: flex;
   .overlay {
     position: absolute;
     background-color: $gray-900;
@@ -13,6 +13,48 @@ header.masthead {
     top: 0;
     left: 0;
     opacity: 0.3;
+  }
+  .title {
+    margin: auto;
+    display: flex;
+    width: 80%;
+    img {
+      max-width: 30%;
+    }
+    img:first-child {
+      margin-right: auto;
+    }
+    img:last-child {
+      margin-left: auto;
+    }
+    @media (min-width: 520px) {
+      img:first-child {
+        padding-right: 16px;
+      }
+      img:last-child {
+        padding-left: 16px;
+      }
+    }
+    @media (max-width: 519px) {
+      //display: none;
+      margin-top: 0;
+      margin-bottom: 0;
+      height: 100%;
+      width: 100%;
+      display: grid;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      img {
+        max-height: 2rem;
+      }
+      img:first-child {
+        margin: 1rem auto auto;
+      }
+      img:last-child {
+        margin: auto auto 1rem;
+      }
+    }
   }
   h1 {
     font-size: 2rem;

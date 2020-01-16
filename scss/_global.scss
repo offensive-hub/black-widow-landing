@@ -1,5 +1,6 @@
 body {
   @include body-font;
+  background-color: #090b0c;
 }
 
 h1,
@@ -10,4 +11,7 @@ h5,
 h6 {
   @include body-font;
   font-weight: 700;
+}
+a {
+  cursor: pointer;
 }
