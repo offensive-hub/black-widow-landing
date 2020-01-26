@@ -1,69 +1,91 @@
 header.masthead {
   position: relative;
-  background: $gray-800 url('/assets/img/cover.jpg') no-repeat center center;
-  @include background-cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  display: flex;
-  .overlay {
-    position: absolute;
-    background-color: $gray-900;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.3;
-  }
+  background: #000;
+  padding-top: 0;
+  height: fit-content;
   .title {
-    margin: auto;
-    display: flex;
-    width: 80%;
-    img {
-      max-width: 30%;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: inline-grid;
+    @media (max-width: 767px) {
+      grid-template-areas: 'black' 'logo' 'widow';
     }
-    img:first-child {
-      margin-right: auto;
+    @media (min-width: 768px) {
+      grid-template-areas: 'black logo widow';
     }
-    img:last-child {
-      margin-left: auto;
-    }
-    @media (min-width: 520px) {
-      img:first-child {
-        padding-right: 16px;
-      }
-      img:last-child {
-        padding-left: 16px;
-      }
-    }
-    @media (max-width: 519px) {
-      //display: none;
-      margin-top: 0;
-      margin-bottom: 0;
-      height: 100%;
-      width: 100%;
-      display: grid;
-      position: absolute;
-      top: 0;
-      bottom: 0;
+    div {
+      display: flex;
       img {
-        max-height: 2rem;
+        max-width: 100%;
       }
-      img:first-child {
-        margin: 1rem auto auto;
+    }
+    div.text {
+      margin-top: auto;
+      @media (max-width: 767px) {
+        height: 20vh;
       }
-      img:last-child {
-        margin: auto auto 1rem;
+      @media (min-width: 768px) {
+        max-height: 10vw;
+        margin-bottom: 8vh;
       }
+      img {
+        @media (max-width: 767px) {
+          height: 80%;
+        }
+        @media (min-width: 768px) {
+          max-height: 10vw;
+        }
+      }
+    }
+    div.text-left {
+      @media (max-width: 767px) {
+        margin: auto;
+      }
+      @media (min-width: 768px) {
+        margin-left: auto;
+      }
+      img {
+        @media (max-width: 767px) {
+          margin-top: auto;
+        }
+      }
+    }
+    div.text-right {
+      margin-right: auto;
+      @media (max-width: 767px) {
+        margin: auto;
+      }
+      @media (min-width: 768px) {
+        margin-right: auto;
+      }
+      img {
+        @media (max-width: 767px) {
+          margin-bottom: auto;
+        }
+      }
+    }
+    div.logo-center {
+      img {
+        @media (max-width: 767px) {
+          height: 60vh;
+        }
+        @media (min-width: 768px) {
+          max-height: 100vh;
+        }
+      }
+      margin: auto;
     }
   }
   h1 {
     font-size: 2rem;
   }
-  @media (min-width: 768px) {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
-    h1 {
-      font-size: 3rem;
-    }
+  //@media (min-width: 768px) {
+  //  h1 {
+  //    font-size: 3rem;
+  //  }
+  //}
+  @media (max-width: 510px) {
+    // TODO: fix
   }
 }

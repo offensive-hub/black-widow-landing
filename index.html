@@ -43,30 +43,22 @@
 
 <body>
   <!-- Masthead -->
-  <header class="masthead text-white text-center">
-    <div class="overlay"></div>
+  <header class="masthead text-white text-center" id="particles-js">
     <div class="title">
-      <img class="text-left" src="/assets/img/title-1.png" alt="BLACK">
-      <img class="text-right" src="/assets/img/title-2.png" alt="WIDOW">
-<!--      <div class="row">-->
-<!--        <div class="col-xl-9 mx-auto">-->
-<!--          <h1 class="mb-5">Black Widow</h1>-->
-<!--        </div>-->
-<!--        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">-->
-<!--          <form>-->
-<!--            <div class="form-row">-->
-<!--              <div class="col-12">-->
-<!--                <h2>Test the security of your systems!</h2>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </form>-->
-<!--        </div>-->
-<!--      </div>-->
+      <div class="text text-left">
+        <img src="/assets/img/black.png" alt="black">
+      </div>
+      <div class="logo-center">
+        <img src="/assets/img/black-widow-logo-it.png" alt="(logo)">
+      </div>
+      <div class="text text-right">
+        <img src="/assets/img/widow.png" alt="widow">
+      </div>
     </div>
   </header>
 
   <!-- Icons Grid -->
-  <section class="features-icons text-center">
+  <section class="features-icons text-center bg-black">
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
@@ -232,7 +224,13 @@
   <!-- Bootstrap core JavaScript -->
   <script src="/assets/vendor/jquery/jquery.min.js"></script>
   <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+  <script src="/assets/js/particles.js/particles.min.js"></script>
+  <script type="application/javascript">
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS.load('particles-js', '/assets/js/particles.js/particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
+  </script>
 </body>
 
 </html>
