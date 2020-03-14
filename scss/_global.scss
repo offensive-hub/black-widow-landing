@@ -34,6 +34,8 @@ object {
 svg, svg path, svg text {
   fill: #ff1c21 !important;
 }
+
+
 a {
   color: red;
   font-weight: bolder;
@@ -43,9 +45,26 @@ a:hover {
   text-decoration: unset;
   cursor: pointer;
 }
+
 a:hover strong {
   text-decoration: underline;
 }
+
 object {
   padding: 10px;
+}
+
+.bg-light {
+  background-color: red !important;
+  color: #000000;
+}
+.bg-light a {
+  color: #000000;
+}
+.bg-light a:hover {
+  color: #343434;
+}
+
+.text-muted {
+  color: #670000 !important;
 }
