@@ -127,4 +127,9 @@ exports.build = build;
 exports.watch = watch;
 exports.default = build;
 
-gulp.task('deploy', () => gulp.src('./**/*').pipe(ghPages({branch: 'gh-page'})));
+gulp.task('deploy', () => gulp.src([
+  './**/*',
+  '!./node_modules',
+  '!./gulpfile.js',
+  '!./scss',
+]).pipe(ghPages({branch: 'gh-page'})));
