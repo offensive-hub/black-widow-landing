@@ -11,6 +11,7 @@ const merge = require("merge-stream");
 const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
+const ghPages = require('gulp-gh-pages');
 
 // Load package.json for banner
 const pkg = require('./package.json');
@@ -125,3 +126,5 @@ exports.vendor = vendor;
 exports.build = build;
 exports.watch = watch;
 exports.default = build;
+
+gulp.task('deploy', () => gulp.src('./**/*').pipe(ghPages({branch: 'gh-page'})));
