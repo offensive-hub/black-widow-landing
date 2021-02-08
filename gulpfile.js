@@ -133,4 +133,5 @@ gulp.task('deploy', () => gulp.src([
   '!./gulpfile.js',
   '!./scss',
   '!./package*.json',
+  '.htaccess',
 ]).pipe(ghPages({branch: 'gh-page'})));
