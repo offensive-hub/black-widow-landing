@@ -1,8 +1,14 @@
 # Landing page of `black-widow`
 
-### [https://black-widow.it](https://black-widow.it)
+### URL: [https://black-widow.it](https://black-widow.it)
 
-## Deploy
+### Local Initialization
+
+```shell
+npm install
+```
+
+### Deploy
 
 ```shell
 # Execute:
