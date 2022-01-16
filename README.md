@@ -12,5 +12,5 @@ npm install
 
 ```shell
 # Execute:
-gulp deploy
+gulp build && gulp deploy
 ```

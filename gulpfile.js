@@ -10,7 +10,7 @@ const header = require("gulp-header");
 const merge = require("merge-stream");
 const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
-const ghPages = require('gulp-gh-pages');
+const ghPages = require('gh-pages');
 const sass = require('gulp-sass')(require('sass'));
 
 // Load package.json for banner
@@ -127,11 +127,10 @@ exports.build = build;
 exports.watch = watch;
 exports.default = build;
 
-gulp.task('deploy', () => gulp.src([
-  './**/*',
-  '!./node_modules',
-  '!./gulpfile.js',
-  '!./scss',
-  '!./package*.json',
-  '.htaccess',
-]).pipe(ghPages({branch: 'gh-page'})));
+gulp.task('deploy', () => ghPages.publish(
+    '.publish',
+    {
+      branch: 'gh-page'
+    },
+    function (err) {console.error(err)}
+));
