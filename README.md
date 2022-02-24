@@ -17,6 +17,5 @@ yarn run start
 ### Deploy
 
 ```shell
-# Execute:
 git push origin main
 ```
