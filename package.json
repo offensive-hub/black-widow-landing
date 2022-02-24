@@ -34,14 +34,14 @@
         "caniuse-lite": "^1.0.30001021",
         "htaccess-parser": "^0.1.0",
         "jquery": "^3.5.1",
-        "npm": "^7.20.6",
+        "npm": "^6.14.16",
         "simple-line-icons": "^2.4.1"
     },
     "devDependencies": {
-        "browser-sync": "^0.9.1",
+        "browser-sync": "^2.27.7",
         "del": "5.1.0",
         "gh-pages": "^3.2.3",
-        "gulp": "^3.9.1",
+        "gulp": "^4.0.2",
         "gulp-autoprefixer": "^6.1.0",
         "gulp-clean-css": "4.2.0",
         "gulp-header": "2.0.9",
