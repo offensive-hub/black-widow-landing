@@ -11,7 +11,7 @@ npm install
 ### Local Deployment
 
 ```shell
-gulp run watch
+yarn run start
 ```
 
 ### Deploy
