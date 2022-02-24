@@ -8,14 +8,6 @@
 npm install
 ```
 
-### Local Development
-
-```shell
-# Execute:
-yarn run start
-```
-
-
 ### Deploy
 
 ```shell
