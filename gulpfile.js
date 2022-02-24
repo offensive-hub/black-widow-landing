@@ -126,11 +126,3 @@ exports.vendor = vendor;
 exports.build = build;
 exports.watch = watch;
 exports.default = build;
-
-gulp.task('deploy', () => ghPages.publish(
-    '.publish',
-    {
-      branch: 'gh-page'
-    },
-    function (err) {console.error(err)}
-));

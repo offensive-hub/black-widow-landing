@@ -8,9 +8,15 @@
 npm install
 ```
 
+### Local Deployment
+
+```shell
+gulp run watch
+```
+
 ### Deploy
 
 ```shell
 # Execute:
-gulp build && gulp deploy
+git push origin main
 ```
