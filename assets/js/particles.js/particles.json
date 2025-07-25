@@ -20,7 +20,7 @@
         "nb_sides": 8
       },
       "image": {
-        "src": "/assets/img/black-widow-icon.png",
+        "src": "assets/img/black-widow-icon.png",
         "width": 100,
         "height": 100
       }
