@@ -1,6 +1,6 @@
 # Landing page of `black-widow`
 
-### URL: [https://black-widow.it](https://black-widow.it)
+### URL: [https://offensive-hub.github.io/black-widow-landing](https://offensive-hub.github.io/black-widow-landing)
 
 ### Local Initialization
 
